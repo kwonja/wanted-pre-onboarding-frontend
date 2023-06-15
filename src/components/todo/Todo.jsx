@@ -12,6 +12,7 @@ export default function Todo() {
     }
     const newtodo = await createTodo(newTodo); //필요할때만 가져와 랜더링을 줄인다.
     setTodos( (prev) =>[...prev,newtodo.data])
+    inputRef.current.value='';
   }
   const HandleDelete = async(id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
