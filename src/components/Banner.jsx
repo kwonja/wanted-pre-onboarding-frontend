@@ -35,11 +35,7 @@ color: #000000;
 border : none;
 `;
 export default function Banner() {
-    const [isopen,setIsopen]=useState(false);
-    const navigate = useNavigate();
-  const OnClick = () =>{
-    setIsopen(true);
-  }
+  const navigate = useNavigate();
   const handleLogout = () =>{
     localStorage.clear();
     navigate("/")

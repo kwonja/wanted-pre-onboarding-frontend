@@ -1,6 +1,6 @@
 import './App.css';
-import React,{useEffect,useState} from 'react'
-import {BrowserRouter,Route,Routes,useNavigate,useLocation} from "react-router-dom";
+import React,{useEffect} from 'react'
+import {Route,Routes,useNavigate,useLocation} from "react-router-dom";
 import Signin from './components/login/Signin'
 import Signup from './components/login/Signup';
 import Banner from './components/Banner';

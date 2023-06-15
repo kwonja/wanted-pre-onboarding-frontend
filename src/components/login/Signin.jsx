@@ -1,7 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import {useNavigate } from "react-router-dom";
 import { login } from '../../apis/auth';
-import axios from 'axios'
 export default function Signin() {
     const navigate = useNavigate();
     const [email,setEmail]=useState("")
