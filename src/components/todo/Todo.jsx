@@ -8,12 +8,15 @@ export default function Todo() {
   const [todos, setTodos] = useState([]);
   const HandleSubmit = async(e)=>{
     e.preventDefault(); //새로고침 -> 랜더링을 위해 주석처리함
-    const newTodo={
+    if(inputRef.current.value !== '')
+    {
+      const newTodo={
         "todo" : inputRef.current.value
     }
     const newtodo = await createTodo(newTodo); //필요할때만 가져와 랜더링을 줄인다.
     setTodos( (prev) =>[...prev,newtodo.data])
     inputRef.current.value='';
+    }
   }
   const HandleDelete = async(id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
