@@ -28,18 +28,6 @@ export default function Signin() {
             navigate("/todo");
         }
         SignIn()
-        // try{
-        //      const response =await axios(
-        //         {
-        //             method : "POST",
-        //             url : "http://localhost:8000/auth/signin",
-        //             data :  Reigster,
-        //             headers : {"Content-Type" : "application/json"},
-        //         });
-        //         localStorage.setItem('access_token', response.data.access_token);
-        // }catch(error){
-        //     console.log(error);
-        // } 
     }
     }
     useEffect( ()=>{
@@ -61,7 +49,7 @@ export default function Signin() {
     <Input id="email" data-testid="email-input"  onChange={handleEmailchange} placeholder='@ 포함'/><br/>
     <Label htmlFor='password'>비밀번호</Label>
     <Input id ="password" data-testid="password-input" onChange={handlePasswordChange} placeholder='8자리이상'/><br/>
-    <SignBtn data-testid="signup-button" disabled={!disable}>로그인</SignBtn>
+    <SignBtn data-testid="signin-button" disabled={!disable}>로그인</SignBtn>
     </SignForm>
     </>
   )
