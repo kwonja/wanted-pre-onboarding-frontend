@@ -41,7 +41,7 @@
 - ✅ Assignment 9
  
 ![삭제하기](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/d40c64a6-bf65-45ff-9de0-2a84218db925)
-
+- ✅ 로그아웃 추가 구현
 ## 사용 기술
 - React
 - Styled Components
