@@ -20,7 +20,7 @@ export async function login(Reigster) {
      return await axios(
         {
             method : "POST",
-            url : `${BASE_URL}http://localhost:8000/auth/signup`,
+            url : `${BASE_URL}auth/signup`,
             data :  Reigster,
             headers : {"Content-Type" : "application/json"},
         }

@@ -7,7 +7,7 @@ display : flex;
 flex-direction: column;
 align-items:center;
 `;
-export  const Input = styled.input`
+export const Input = styled.input`
 width : 350px;
 height : 44px;
 padding: 16px 10px;
