@@ -39,11 +39,8 @@ font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 100%;
-color: #FFFFFF;
-background: #66C6A3;
 border-radius: 5px;
 border : none;
-color: #FFFFFF;
 margin-bottom : 16px;
 `;
 
