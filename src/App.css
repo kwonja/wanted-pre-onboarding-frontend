@@ -9,7 +9,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     margin : 0 auto;
-    background: #4BBFB4;
+    background: #66C6A3;
   }
   .header{
     height: 78px;
@@ -43,7 +43,7 @@ body{
     text-decoration: none;
   }
   .active li{
-    color: #4BBFB4;
+    color: #66C6A3;
   }
   li, ol{
     list-style: none;
@@ -54,4 +54,8 @@ body{
     color: #FFFFFF;
     padding-top: 4px;
     margin-left: 34px;
+  }
+  .todo{
+    width: 600px;
+    margin: 0 auto;
   }

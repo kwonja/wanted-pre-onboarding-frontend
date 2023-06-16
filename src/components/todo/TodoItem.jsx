@@ -1,5 +1,5 @@
 import React,{useState,useRef} from 'react'
-
+import { AddBtn,CheckBox,Todo,TodoLayer,Input} from './style';
 export default function TodoItem({
     todoItem: { isCompleted, userId, id, todo },
     todoItem,
@@ -35,27 +35,25 @@ export default function TodoItem({
   }
   return (
     <>
-        <li key={id}>
-            <label>
+        <TodoLayer key={id}>
             {
                 onModifyMode && (<>
-                <input type="checkbox" name ="todo" ref={checkRef}/>
-                <input data-testid="modify-input" defaultValue={todo} ref={inputRef}/>
-                <button data-testid="submit-button" onClick={handleSubmit}>제출</button>
-                <button data-testid="cancel-button" onClick={HandleClick}>취소</button>
+                <CheckBox type="checkbox" name ="todo" ref={checkRef}/>
+                <Input data-testid="modify-input" defaultValue={todo} ref={inputRef}/>
+                <AddBtn data-testid="submit-button" onClick={handleSubmit}>제출</AddBtn>
+                <AddBtn data-testid="cancel-button" onClick={HandleClick}>취소</AddBtn>
                 </>)
             }
             {
             !onModifyMode && (<>
-            <input type="checkbox" name="todo" defaultChecked={isCompleted} onChange={handleCheckbox}
+            <CheckBox type="checkbox" name="todo" defaultChecked={isCompleted} onChange={handleCheckbox}
             />
-            <span>{todo}</span> 
-            <button data-testid="modify-button" onClick={HandleClick} >수정</button>
-            <button data-testid="delete-button" onClick={handleDelete}>삭제</button> 
+            <Todo>{todo}</Todo> 
+            <AddBtn data-testid="modify-button" onClick={HandleClick} >수정</AddBtn>
+            <AddBtn data-testid="delete-button" onClick={handleDelete}>삭제</AddBtn> 
                     </>)
             }
-            </label>
-        </li>
+        </TodoLayer>
     </>
   )
 }

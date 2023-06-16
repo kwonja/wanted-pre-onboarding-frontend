@@ -1,6 +1,7 @@
 import React,{useEffect,useState,useRef} from 'react'
 import TodoItem from './TodoItem';
-import {createTodo,deleteTodo,updateTodos,getTodos }from '../../apis/todo'
+import {createTodo,deleteTodo,updateTodos,getTodos }from '../../apis/todo';
+import { Input,AddBtn } from './style';
 export default function Todo() {
 
   const inputRef = useRef();
@@ -41,11 +42,11 @@ export default function Todo() {
   }
 ,[])
   return (
-    <>
+    <div className='todo'>
     <form onSubmit={HandleSubmit}>
     <label htmlFor='createTodo'></label>
-    <input type="text" id="createTodo" data-testid="new-todo-input" placeholder='오늘 할일을 입력해주세요' ref={inputRef}/>
-    <button data-testid="new-todo-add-button">추가</button>
+    <Input type="text" id="createTodo" data-testid="new-todo-input" placeholder='오늘 할일을 입력해주세요' ref={inputRef}/>
+    <AddBtn data-testid="new-todo-add-button">추가</AddBtn>
     </form>
     {todos.map( (todo) =>(
         <TodoItem 
@@ -55,6 +56,6 @@ export default function Todo() {
         HandleDelete={HandleDelete}
         />
     ) )}
-    </>
+    </div>
   )
 }

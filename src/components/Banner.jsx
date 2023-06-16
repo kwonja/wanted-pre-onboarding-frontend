@@ -14,14 +14,14 @@ const Login =styled.button`
 font-weight: 400;
 font-size: 12px;
 line-height: 15px;
-background: #4BBFB4;
+background: #66C6A3;
 color: #000000;
 border : none;
 `;
 const Text = styled.div`
 font-size: 12px;
 line-height: 15px;
-background: #4BBFB4;
+background: #66C6A3;
 color: #000000;
 `
 const Signup =styled.button`
@@ -29,7 +29,7 @@ margin-right : 37px;
 font-weight: 400;
 font-size: 12px;
 line-height: 15px; 
-background: #4BBFB4;
+background: #66C6A3;
 padding:  0px;
 color: #000000;
 border : none;

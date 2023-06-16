@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import {useNavigate } from "react-router-dom";
 import { login } from '../../apis/auth';
+import { Input,Title,SignForm,Label,SignBtn } from './style';
 export default function Signin() {
     const navigate = useNavigate();
     const [email,setEmail]=useState("")
@@ -54,14 +55,14 @@ export default function Signin() {
     },[email,password])
   return (
     <>
-    <h2>로그인페이지</h2>
-    <form onSubmit={handleSubmit}>
-    <label htmlFor='email'>이메일</label>
-    <input id="email" data-testid="email-input"  onChange={handleEmailchange} placeholder='@ 포함'/><br/>
-    <label htmlFor='password'>비밀번호</label>
-    <input id ="password" data-testid="password-input" onChange={handlePasswordChange} placeholder='8자리이상'/><br/>
-    <button data-testid="signup-button" disabled={!disable}>로그인</button>
-    </form>
+    <Title>로그인페이지</Title>
+    <SignForm onSubmit={handleSubmit}>
+    <Label htmlFor='email'>이메일</Label>
+    <Input id="email" data-testid="email-input"  onChange={handleEmailchange} placeholder='@ 포함'/><br/>
+    <Label htmlFor='password'>비밀번호</Label>
+    <Input id ="password" data-testid="password-input" onChange={handlePasswordChange} placeholder='8자리이상'/><br/>
+    <SignBtn data-testid="signup-button" disabled={!disable}>로그인</SignBtn>
+    </SignForm>
     </>
   )
 }
