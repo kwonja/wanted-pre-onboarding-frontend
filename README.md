@@ -14,15 +14,30 @@
  $ npm start
  ``` 
 
+## 프로젝트 구조
+```
+📦 src
+├── 📂 apis
+│   ├── 📄 auth.js
+│   ├── 📄 config.js
+│   └── 📄 todo.js
+└── 📂 component
+    ├── 📂 login
+    │    ├── 📄 Signin
+    │    └── 📄 Signup
+    └── 📂 todo
+         ├── 📄 Todo.jsx
+         └── 📄 TodoItem.jsx
+```
 ## 데모영상 GIF
 
-- ✅ Assignment 1 & Assignment 2
+### ✅ Assignment 1 & Assignment 2
 
   ![회원가입](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/0d53d5f8-b04f-4c4a-9f0f-7d9998dc89f8)
 - ✅ Assignment 3
 
  ![로그인](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/209dbdb3-e7f3-42a7-86b8-7dc191932d85)
-- ✅ Assignment 4
+### ✅ Assignment 4
 - 토큰이 없는상태
 
 ![ezgif com-video-to-gif](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/b453906a-8f4b-43d3-b136-07219ab6de4c)
@@ -30,18 +45,18 @@
 
 ![ezgif com-video-to-gif (1)](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/b4c2b1a2-e562-473f-b5dd-4176f2108f0e)
 
-- ✅ Assignment 5 & 6
+### ✅ Assignment 5 & 6
 
 ![추가](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/a0eab880-039e-416a-9707-2a8f51e35a24)
 
-- ✅ Assignment 7 & 8 & 10
+### ✅ Assignment 7 & 8 & 10
 
 ![수정](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/35be8e94-f64d-4a94-ad09-4f202efe719b)
 
-- ✅ Assignment 9
+### ✅ Assignment 9
  
 ![삭제하기](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/d40c64a6-bf65-45ff-9de0-2a84218db925)
-- ✅ 로그아웃 추가 구현
+### ✅ 로그아웃 추가 구현
 ## 사용 기술
 - React
 - Styled Components
