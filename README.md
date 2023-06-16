@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 원티드 프리온보딩 프론트엔드 - 6월 선발 과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 이름
+- 권성민
 
-## Available Scripts
+## 배포
+- netify를 사용해 배포했습니다.
+- 링크 : https://main--steady-jalebi-27e289.netlify.app/
 
-In the project directory, you can run:
+## git clone 후 실행방법
+ ```zsh
+ cd wanted-pre-onboarding-frontend
+ $ npm install
+ $ npm start
+ ``` 
 
-### `npm start`
+## 데모영상 GIF
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ Assignment 1 & Assignment 2
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ![회원가입](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/0d53d5f8-b04f-4c4a-9f0f-7d9998dc89f8)
+- ✅ Assignment 3
 
-### `npm test`
+ ![로그인](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/209dbdb3-e7f3-42a7-86b8-7dc191932d85)
+- ✅ Assignment 4
+- 토큰이 없는상태
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![ezgif com-video-to-gif](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/b453906a-8f4b-43d3-b136-07219ab6de4c)
+- 토큰이 있는상태
 
-### `npm run build`
+![ezgif com-video-to-gif (1)](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/b4c2b1a2-e562-473f-b5dd-4176f2108f0e)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ✅ Assignment 5 & 6
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![추가](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/a0eab880-039e-416a-9707-2a8f51e35a24)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ✅ Assignment 7 & 8 & 10
 
-### `npm run eject`
+![수정](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/35be8e94-f64d-4a94-ad09-4f202efe719b)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ✅ Assignment 9
+ 
+![삭제하기](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/d40c64a6-bf65-45ff-9de0-2a84218db925)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 사용 기술
+- React
+- Styled Components
+- axios
+- react-router-dom
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 로컬 서버 구동
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 배포된 API에 문제가 있는 경우 활용할 수 있는 로컬 서버 구동법입니다.
+- 로컬 서버는 sqlite에 의존성이 있습니다.
 
-## Learn More
+### 설치 및 실행
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```zsh
+$ npm install
+$ npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 위 순서대로 실행하면 localhost:8000 포트에 서버가 실행됩니다.
+- 서버를 실행하면 db.sqlite 파일이 생성되며 해당 파일을 삭제 시 기존의 데이터는 초기화 됩니다.
+- 그 외 스펙은 배포된 API와 동일합니다.
