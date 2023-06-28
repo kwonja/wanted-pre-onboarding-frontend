@@ -23,8 +23,8 @@
 │   └── 📄 todo.js
 └── 📂 component
     ├── 📂 login
-    │    ├── 📄 Signin
-    │    └── 📄 Signup
+    │    ├── 📄 Signin.jsx
+    │    └── 📄 Signup.jsx
     └── 📂 todo
          ├── 📄 Todo.jsx
          └── 📄 TodoItem.jsx
@@ -34,7 +34,7 @@
 ### ✅ Assignment 1 & Assignment 2
 
   ![회원가입](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/0d53d5f8-b04f-4c4a-9f0f-7d9998dc89f8)
-- ✅ Assignment 3
+### ✅ Assignment 3
 
  ![로그인](https://github.com/kwonja/wanted-pre-onboarding-frontend/assets/42410000/209dbdb3-e7f3-42a7-86b8-7dc191932d85)
 ### ✅ Assignment 4
