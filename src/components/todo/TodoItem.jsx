@@ -7,7 +7,6 @@ export default function TodoItem({
     HandleUpdate,
   }) {
   const inputRef = useRef();
-  const checkRef = useRef();
   const [onModifyMode, setOnModifyMode] = useState(false);
   const [todoitem, setTodoitem] = useState(todoItem);
 
@@ -18,6 +17,7 @@ export default function TodoItem({
     e.preventDefault();
     const inputvalue = inputRef.current.value;
     HandleUpdate({ ...todoitem, todo: inputRef.current.value, isCompleted : false}); //todo,checked 변경
+
     setTodoitem((prev) => { //비동기라서 ref값을 못가져오기때문에 따로 변수 선언
         return { ...prev, todo: inputvalue};
       });
@@ -37,8 +37,9 @@ export default function TodoItem({
     <>
         <TodoLayer key={id}>
             {
-                onModifyMode && (<>
-                <CheckBox type="checkbox" name ="todo" ref={checkRef}/>
+                onModifyMode && 
+                (<>
+                <CheckBox type="checkbox" name ="todo"/>
                 <Input data-testid="modify-input" defaultValue={todo} ref={inputRef}/>
                 <AddBtn data-testid="submit-button" onClick={handleSubmit}>제출</AddBtn>
                 <AddBtn data-testid="cancel-button" onClick={HandleClick}>취소</AddBtn>

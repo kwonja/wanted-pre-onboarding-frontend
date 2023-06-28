@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import {useNavigate } from "react-router-dom";
 import { login } from '../../apis/auth';
 import { Input,Title,SignForm,Label,SignBtn } from './style';
+import {setLocalStorage } from '../../utils/utils'
 export default function Signin() {
     const navigate = useNavigate();
     const [email,setEmail]=useState("")
@@ -18,13 +19,14 @@ export default function Signin() {
         if (email.includes('@') && password.length >= 8) //정상 회원가입
         {
         e.preventDefault();
+        
         const Reigster ={
             "email" : email,
             "password" : password
         }
         const SignIn = async()=>{
             const response = await login(Reigster)
-            localStorage.setItem('access_token', response.data.access_token);
+            setLocalStorage(response.data.access_token)
             navigate("/todo");
         }
         SignIn()

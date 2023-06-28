@@ -6,8 +6,9 @@ export default function Todo() {
 
   const inputRef = useRef();
   const [todos, setTodos] = useState([]);
+  
   const HandleSubmit = async(e)=>{
-    e.preventDefault(); //새로고침 -> 랜더링을 위해 주석처리함
+    e.preventDefault(); //새로고침
     if(inputRef.current.value !== '')
     {
       const newTodo={
@@ -18,6 +19,7 @@ export default function Todo() {
     inputRef.current.value='';
     }
   }
+
   const HandleDelete = async(id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
     deleteTodo(id);
@@ -33,17 +35,16 @@ export default function Todo() {
       })
     );
     updateTodos(todo);
-    // onGet()
   };
   const onGet = async()=>{
     const data = await getTodos(); //axois는 promise를 반환하기때문에 await로 비동기 처리를 해줘야함
                                    //await를 사용하려면 async를 사용해야함
     setTodos(data)
   }
+
   useEffect(() =>{
     onGet()
-  }
-,[])
+  },[])
   return (
     <div className='todo'>
     <form onSubmit={HandleSubmit}>

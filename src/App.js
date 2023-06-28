@@ -6,14 +6,14 @@ import Signup from './components/login/Signup';
 import Banner from './components/Banner';
 import Main from './components/Main';
 import Todo from './components/todo/Todo';
+import { getLocalStorageToken } from './utils/utils';
 function App() {
 
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect( ()=>{
-    // console.log(location)
-    const access_token = localStorage.getItem('access_token');
+    const access_token = getLocalStorageToken();
     if(access_token) //토큰이 존재할때
     {
     if(location.pathname ==="/signin" || location.pathname ==="/signup")
